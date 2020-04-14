@@ -1,0 +1,35 @@
+﻿The Following analysis will not count complexity of built-in functionalities like python implementation to check if element is in a list and default list sorting method
+
+Task0:
+	- First_text [ Complexity = O(1) ]:
+	 The function simply return the first element of the texts list
+ 	
+	- Last_call [Complexity = O(1)]:
+	The simply simply return the last element of the calls list
+
+Task1:
+	- Different_number [Complexity = O(n)]:
+	As per the implementation, we have used a for-loop which will take O(n) runtime. Then we have used in-operator inside for-loop which will also take O(n) runtime. So, the overall runtime complexity will be O(n^2).
+
+
+Task2:
+	- longest_Number[Complexity = O(n)]:
+	the function created dictionary with tel. Number as key and seconds of time  spent on call by them.Then Find the number have maximum time spend.
+
+Task3:
+	- code_called_by_bangalore [Complexity = O(n)]
+	The function iterate over the calls list and if the caller number start with Bangalore prefix, add the receiver code number in a list (it this is not in it yet)
+
+	- perc_bangalore_to_Bangalore [Complexity = O(n)].
+	The function iterate over the calls to count the calls made by Bangalore fixed line and in the same iteration check if that call is made to another fixed line of Bangalore.
+    At the end it calculate the percentage with the ratio between Bangalore fixed line called from the same country and total fixed line calls from Bangalore (multiplied by 100)
+
+	-we have used python built-in sorting function which will take O(n log n) runtime. We also have to consider it while analyzing the overall runtime complexity
+
+
+Task4:
+	-telemarketers[Complexity = O(n)]
+	The function first appends all the numbers  of ongoing calls then it start removing the number 	which never recieve Incoming call.the number who never do any message and receive text also 	be removed.
+
+	-we also used python built-in sorting function which will take O(n log n) runtime. We also have to consider it while analyzing the overall runtime complexity
+
